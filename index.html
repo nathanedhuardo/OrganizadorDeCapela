@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles/output.css">
+    <title>Organizar Capela</title>
+</head>
+<body>
+    <div class="h-screen">
+        <nav class="bg-gray-700 flex w-full justify-between border-b-8 border-b-orange-500">
+            <div class="flex">
+                <span class="p-3 text-gray-400 cursor-pointer">Viscel</span>
+                <button class="bg-gray-800 inline-flex items-center p-3">
+                    <span class="material-icons text-gray-400">home</span>
+                </button>
+                <button class="text-gray-400 inline-flex items-center p-2 gap-1 cursor-pointer hover:bg-gray-800">
+                    <span class="material-icons">table_chart</span>
+                    <span>Cadastros</span>
+                    <span class="material-icons">arrow_drop_down</span>
+                </button>
+                <button class="text-gray-400 inline-flex items-center p-2 gap-1 cursor-pointer hover:bg-gray-800">
+                    <span class="material-icons">payments</span>
+                    <span>Pagamentos</span>
+                    <span class="material-icons">arrow_drop_down</span>
+                </button>
+                <button class="text-gray-400 inline-flex items-center p-2 gap-1 cursor-pointer hover:bg-gray-800">
+                    <span class="material-icons">add</span>
+                    <span>Top10</span>
+                </button>
+                <button class="text-gray-400 inline-flex items-center p-2 gap-1 cursor-pointer hover:bg-gray-800">
+                    <span class="material-icons">flag</span>
+                    <span>Ped. Oração</span>
+                </button>
+                <button class="inline-flex items-center px-3 hover:bg-gray-800">
+                    <span class="material-icons text-gray-400">build</span>
+                </button>
+            </div>
+            <div class="flex">
+                <button class="flex items-center px-3 hover:bg-gray-800 text-gray-400">
+                    <span class="material-icons">help</span>
+                    <span class="material-icons">arrow_drop_down</span>
+                </button>
+                <button class="inline-flex items-center cursor-pointer pl-3 text-gray-400 hover:bg-gray-800">
+                    <img src="imgs/user.png" width="30px" alt="" class="rounded-full">
+                    <span class="material-icons">arrow_drop_down</span>
+                </button>
+            </div>
+        </nav>
+        <main>
+            <div class="bg-gray-200 flex items-center w-full h-10 border-b-2 border-black gap-2">
+                <img src="imgs/paroquia.png" class="ml-2 max-w-[20px]" alt="">
+                <span class="material-icons md-18 cursor-pointer">add_circle</span>
+                <span>Minha igreja - IEQ - IeqCastanhall Sede</span>
+            </div>
+            <div class="flex justify-evenly">
+                <div class="flex p-2">
+                    <button class="flex items-center flex-col font-bold rounded-l text-sm w-44 h-16 gap-x-1 py-2 bg-red-500 text-white">
+                        <span class="material-icons md-18">table_rows</span>
+                        <span>Células</span>
+                    </button>
+                    <button class="flex items-center flex-col font-bold text-sm w-44 h-16 gap-x-1 py-2 bg-yellow-500 text-white">
+                        <span class="material-icons md-18">radio_button_checked</span>
+                        <span>Ped. Oração</span>
+                    </button>
+                    <button class="flex items-center flex-col font-bold rounded-r text-sm w-44 h-16 gap-x-1 py-2 bg-blue-600 text-white">
+                        <span class="material-icons">person</span>
+                        <span>Meus Dados</span>
+                    </button>
+                </div>
+                <div class="flex p-2">
+                    <button class="flex items-center flex-col font-bold rounded-l text-sm w-44 h-16 gap-x-1 py-2 text-white bg-green-500">
+                        <span class="material-icons">person</span>
+                        <span>Usuários</span>
+                    </button>
+                    <button class="flex items-center flex-col font-bold text-sm w-44 h-16 gap-x-1 py-2 text-white bg-blue-400">
+                        <span class="material-icons">build</span>
+                        <span class="">Config.</span>
+                    </button>
+                    <button class="flex items-center flex-col font-bold rounded-r text-sm w-44 h-16 gap-x-1 py-2 text-gray-500 bg-gray-50">
+                        <span class="material-icons">table_chart</span>
+                        <span>Agenda</span>
+                    </button>
+                </div>
+            </div>
+            <div class="flex justify-between p-4 bg-slate-100">
+                <div class="w-90">
+                    <div class="bg-white p-2 rounded shadow w-96">
+                        <div class="bg-yellow-200 items-center rounded p-2 m-0">
+                            <h3 class="font-bold mb-2">Membros/Usuários (Ativos)</h3>
+                        </div>
+                        <ul class="list-disc pl-5 py-1">
+                            <li>Administradores: 2</li>
+                            <li>Líderes: 14</li>
+                            <li>Supervisores: 3</li>
+                            <li>Coordenadores: 1</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-2 rounded shadow">
+                        <div class="bg-yellow-200 rounded p-2 m-0">
+                            <h3 class="font-bold mb-2">Doações (Mês atual)</h3>
+                        </div>
+                        <ul class="list-disc pl-5">
+                            <li>Doações realizadas: R$ 0,00</li>
+                            <li>Doações aguardando pagamento: R$ 0,00</li>
+                        </ul>
+                    </div>
+                </div>
+                <div>    
+                    <div class="bg-white p-4 rounded shadow w-96">
+                        <div class="bg-green-300 p-2">
+                            <h3 class="font-bold mb-2">Reuniões de Célula</h3>
+                        </div>
+                        <div class="flex justify-center">
+                            <h3 class="font-bold mb-2">Jan à Dez de 2015</h3>
+                        </div>
+                        <ul class="list-disc pl-5">
+                            <li>Visitantes não convertidos:</li>
+                            <li>Conversões realizadas:</li>
+                            <li>Reconciliações realizadas:</li>
+                            <li>Batismos realizados:</li>
+                            <li>Ofertas com propósito:</li>
+                            <li>Trab. de Evangelização:</li>
+                            <li>Ação Social:</li>
+                            <li>Visita de Supervisão:</li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                <div class="bg-white p-4 rounded shadow w-96">
+                    <div class="bg-blue-200 items-center rounded p-2 m-0">
+                        <h3 class="font-bold mb-2">Cadastros (Ativos)</h3>
+                    </div>
+                    <ul class="list-disc pl-5">
+                        <li>Usuários: 18</li>
+                        <li>Células: 14</li>
+                        <li>Vídeos: 7</li>
+                    </ul>
+                </div>
+                    <div class="bg-white p-4 rounded shadow">
+                        <div class="bg-blue-200 items-center rounded p-2 m-0">
+                            <h3 class="font-bold mb-2">Células ativas por Rede</h3>
+                        </div>
+                        <ul class="list-disc pl-5">
+                            <li>Homens: 1</li>
+                            <li>Rapazes: 4</li>
+                            <li>Moças: 9</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-4 rounded shadow">
+                        <div class="bg-blue-200 items-center rounded p-2 m-0">
+                            <h3 class="font-bold mb-2">Agenda do mês (Jun/2015)</h3>
+                        </div>
+                            <ul class="list-disc pl-5">
+                            <li>Evento:</li>
+                            <li>Data do evento:</li>
+                        </ul>
+                    </div>
+                </div>
+        </main>
+        <footer>
+            <div class="p-2 font-bold text-gray-300 bg-slate-500">
+                <p>wf7.com.br</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
